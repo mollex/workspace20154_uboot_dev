@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;u-boot-xlnx-xilinx-v2015.4-origin/src&apos;" deleteContents="false" description="Delete resource &apos;u-boot-xlnx-xilinx-v2015.4-origin/src&apos;" element1="/u-boot-xlnx-xilinx-v2015.4-origin/src" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1551873359009"/>
+</session>

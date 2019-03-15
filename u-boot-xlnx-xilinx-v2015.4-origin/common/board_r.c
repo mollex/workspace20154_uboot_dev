@@ -709,7 +709,7 @@ init_fnc_t init_sequence_r[] = {
 #endif
 	bootstage_relocate,
 #ifdef CONFIG_DM
-	//initr_dm, 							/* mollex: comment */
+	initr_dm,
 #endif
 #ifdef CONFIG_ARM
 	board_init,	/* Setup chipselects */
@@ -782,7 +782,7 @@ init_fnc_t init_sequence_r[] = {
 	initr_onenand,
 #endif
 #ifdef CONFIG_GENERIC_MMC
-	//initr_mmc,							/* mollex: comment */
+	initr_mmc,
 #endif
 #ifdef CONFIG_HAS_DATAFLASH
 	initr_dataflash,

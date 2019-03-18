@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item value="E:\_PelengWorkspace\ZYNQ\Linux_build\workspace20154_uboot\system_hw_platform_0" key="com.xilinx.sdk.hw.ui.hwspec.last"/>
-	<item value="E:\_PelengWorkspace\ZYNQ\Linux_build\workspace20154_uboot\system_hw_platform_0" key="last_stored_selection"/>
+	<item value="E:\_PelengWorkspace\ZYNQ\Linux_build_git\workspace20154_uboot\u-boot-xlnx-xilinx-v2015.4-origin\Debug" key="tcf_debug_app_selection"/>
+	<item value="E:\_PelengWorkspace\ZYNQ\Linux_build_git\workspace20154_uboot\u-boot-xlnx-xilinx-v2015.4-origin\Debug" key="last_stored_selection"/>
 </section>

@@ -361,8 +361,8 @@
 		DFU_ALT_INFO
 
 /* Default environment */
-#define CONFIG_IPADDR	10.10.70.102
-#define CONFIG_SERVERIP	10.10.70.101
+#define CONFIG_IPADDR	192.168.33.3
+#define CONFIG_SERVERIP	192.168.2.233
 
 /* default boot is according to the bootmode switch settings */
 #if defined(CONFIG_CMD_ZYNQ_RSA)

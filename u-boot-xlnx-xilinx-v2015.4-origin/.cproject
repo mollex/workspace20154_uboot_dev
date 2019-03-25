@@ -14,11 +14,11 @@
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactExtension="elf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="xilinx.gnu.armlinux.exe.debug.208767306" name="Debug" parent="xilinx.gnu.armlinux.exe.debug" postbuildStep="arm-xilinx-linux-gnueabi-readelf -l ${ProjName}.elf">
+				<configuration artifactExtension="elf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="xilinx.gnu.armlinux.exe.debug.208767306" name="Debug" parent="xilinx.gnu.armlinux.exe.debug" postbuildStep="arm-xilinx-linux-gnueabi-readelf -l ${ProjName}.elf &amp;&amp; arm-xilinx-linux-gnueabi-objdump -h ${ProjName}.elf">
 					<folderInfo id="xilinx.gnu.armlinux.exe.debug.208767306." name="/" resourcePath="">
 						<toolChain id="xilinx.gnu.armlinux.exe.debug.toolchain.722203464" name="Xilinx ARM GNU/Linux Toolchain" superClass="xilinx.gnu.armlinux.exe.debug.toolchain">
 							<targetPlatform binaryParser="com.xilinx.sdk.managedbuilder.XELF.armlinux" id="xilinx.armlinux.target.gnu.base.debug.1454511943" isAbstract="false" name="Debug Platform" superClass="xilinx.armlinux.target.gnu.base.debug"/>
-							<builder buildPath="${workspace_loc:/u-boot-xlnx-xilinx-v2015.4-origin}/Debug" enableAutoBuild="true" id="xilinx.gnu.armlinux.toolchain.builder.debug.1301522125" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="GNU make" superClass="xilinx.gnu.armlinux.toolchain.builder.debug"/>
+							<builder buildPath="${workspace_loc:/u-boot-xlnx-xilinx-v2015.4-origin}/Debug" enableAutoBuild="true" id="xilinx.gnu.armlinux.toolchain.builder.debug.1301522125" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="GNU make" parallelBuildOn="true" parallelizationNumber="optimal" superClass="xilinx.gnu.armlinux.toolchain.builder.debug"/>
 							<tool id="xilinx.gnu.armlinux.c.toolchain.assembler.debug.340018794" name="ARM Linux gcc assembler" superClass="xilinx.gnu.armlinux.c.toolchain.assembler.debug">
 								<inputType id="xilinx.gnu.assembler.input.1448768988" superClass="xilinx.gnu.assembler.input"/>
 							</tool>
@@ -41,7 +41,7 @@
 									<listOptionValue builtIn="false" value="CONFIG_ZYNQ_QSPI"/>
 									<listOptionValue builtIn="false" value="CONFIG_ZYNQ_BOOT_FREEBSD"/>
 								</option>
-								<option id="xilinx.gnu.compiler.option.optimization.flags.1891488539" name="Other optimization flags" superClass="xilinx.gnu.compiler.option.optimization.flags" value="-nostdinc -fPIC -Wno-format-nonliteral" valueType="string"/>
+								<option id="xilinx.gnu.compiler.option.optimization.flags.1891488539" name="Other optimization flags" superClass="xilinx.gnu.compiler.option.optimization.flags" value="-nostdinc -fPIC -Wno-format-nonliteral -fno-builtin  " valueType="string"/>
 								<option id="xilinx.gnu.compiler.dircategory.includes.1004369311" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/arch/arm/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/include}&quot;"/>
@@ -134,7 +134,7 @@
 					</fileInfo>
 					<fileInfo id="xilinx.gnu.armlinux.exe.debug.208767306.647667233" name="crt0.S" rcbsApplicability="disable" resourcePath="arch/arm/lib/crt0.S" toolsToInvoke="xilinx.gnu.armlinux.c.toolchain.compiler.debug.1894800098.1224669812">
 						<tool id="xilinx.gnu.armlinux.c.toolchain.compiler.debug.1894800098.1224669812" name="ARM Linux gcc compiler" superClass="xilinx.gnu.armlinux.c.toolchain.compiler.debug.1894800098">
-							<option id="xilinx.gnu.compiler.symbols.defined.1297127929" superClass="xilinx.gnu.compiler.symbols.defined" valueType="definedSymbols">
+							<option id="xilinx.gnu.compiler.symbols.defined.1297127929" name="Defined symbols (-D)" superClass="xilinx.gnu.compiler.symbols.defined" valueType="definedSymbols">
 								<listOptionValue builtIn="false" value="__KERNEL__"/>
 								<listOptionValue builtIn="false" value="__UBOOT__"/>
 								<listOptionValue builtIn="false" value="CONFIG_SYS_TEXT_BASE=0x4000000"/>
@@ -262,5 +262,12 @@
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.xilinx.managedbuilder.ui.ARMLinuxGCCManagedMakePerProjectProfileC"/>
 		</scannerConfigBuildInfo>
 	</storageModule>
-	<storageModule moduleId="refreshScope"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/u-boot-xlnx-xilinx-v2015.4-origin"/>
+		</configuration>
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/u-boot-xlnx-xilinx-v2015.4-origin"/>
+		</configuration>
+	</storageModule>
 </cproject>

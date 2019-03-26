@@ -6,8 +6,10 @@ Ready to use project U-boot with Xilinx SDK. Main goal is build and debug U-boot
 
 This repository contains a full working work space for an easy start working with it. U-boot has been tested by downloading the image Linux  over the network and via a memory SD card. 
 
-Source code U-boot from official Xilinx repositories [https://github.com/Xilinx/u-boot-xlnx](https://github.com/Xilinx/u-boot-xlnx "u-boot-xlnx")  
-Release [https://github.com/Xilinx/u-boot-xlnx/releases/tag/xilinx-v2015.4](https://github.com/Xilinx/u-boot-xlnx/releases/tag/xilinx-v2015.4)
+ -[u-boot-xlnx](https://github.com/Xilinx/u-boot-xlnx) - Official Xilinx repositories U-boot
+
+ -[xilinx-v2015.4](https://github.com/Xilinx/u-boot-xlnx) - Source code U-boot xilinx-v2015.4
+
 
 ### Prerequisites
 
@@ -15,12 +17,32 @@ Release [https://github.com/Xilinx/u-boot-xlnx/releases/tag/xilinx-v2015.4](http
 - Xilinx SDK 2015.4 (or 2015.3)
 - ZedBoard 
 
-### Installing
+### Set up workspace
 
 - clone 
-- open as work space with Xilinx SDK 
+- open as workspace with Xilinx SDK 
+- import projects 
+
+**Set off Build Automatically**
+
+```
+Menu: Project -> Build Automatically off
+```
 
 ![OPEN](readme/uboot_open_workspace.png)
+![OPEN](readme/uboot_autobuild.png)
+
+### Import projects
+
+```
+right click on Project Explorer -> Import -> Existings Project Into Workspace -> Browse -> Finish
+```
+
+![OPEN](readme/uboot_import.png)
+![OPEN](readme/uboot_import2.png)
+
+![OPEN](readme/uboot_import3.png)
+
 
 ### Build
 
@@ -66,13 +88,21 @@ If everything is successful you will see the following:
 
 Work only with u-boot-xlnx-xilinx-v2015.4-debug project!
 
+
 - connect ZedBoard (jtag + uart)
 - remove SD card
 - set jampers  MIO6-GND, MIO5-3.3, MIO4-3.3, MIO3-GND, MIO2-GND    
-- open **Debug Configuration** set correct path to **u-boot-xlnx-xilinx-v2015.4-debug.elf** file
+- open **Debug Configuration** create New Xilinx C/C++ application (System Debugger)
+- set correct path to **u-boot-xlnx-xilinx-v2015.4-debug.elf** file
+- apply
 - run debug
 
-![PRJ](readme/uboot_debug.png)
+
+![PRJ](readme/uboot_debug3.png)
+
+![PRJ](readme/uboot_debug4.png)
+
+![PRJ](readme/uboot_debug5.png)
 
 ### Working 
 

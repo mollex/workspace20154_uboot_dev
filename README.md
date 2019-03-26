@@ -109,3 +109,5 @@ Work only with u-boot-xlnx-xilinx-v2015.4-debug project!
 Explore the project comfortably with breakpoints!
 
 ![PRJ](readme/uboot_debug2.png)
+
+![PRJ](readme/debug_mode.gif)

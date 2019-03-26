@@ -189,9 +189,6 @@
 							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.1077189928" name="Resource Custom Build Step Output Type"/>
 						</tool>
 					</fileInfo>
-					<fileInfo id="xilinx.gnu.armlinux.exe.debug.68600198.1610820294" name="fat.c" rcbsApplicability="disable" resourcePath="fs/fat/fat.c" toolsToInvoke="xilinx.gnu.armlinux.c.toolchain.compiler.debug.1778988929.1196756786">
-						<tool id="xilinx.gnu.armlinux.c.toolchain.compiler.debug.1778988929.1196756786" name="ARM Linux gcc compiler" superClass="xilinx.gnu.armlinux.c.toolchain.compiler.debug.1778988929"/>
-					</fileInfo>
 					<sourceEntries>
 						<entry excluding="fs/fat/fat.c|drivers/usb/gadget/composite.c|lib/zlib/inflate.c|lib/zlib/adler32.c|lib/zlib/inffast.c|lib/zlib/inftrees.c|lib/zlib/zutil.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>

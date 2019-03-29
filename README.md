@@ -1,4 +1,4 @@
-# Xilinx U-boot 2015.4 Zynq (Windows Xilinx SDK) 
+# Xilinx U-boot 2015.4, 14.7  Zynq (Windows Xilinx SDK) 
 
 Ready to use project U-boot with Xilinx SDK. Main goal is build and debug U-boot with IDE in bare metal. 
 
@@ -6,15 +6,14 @@ Ready to use project U-boot with Xilinx SDK. Main goal is build and debug U-boot
 
 This repository contains a full working work space for an easy start working with it. U-boot has been tested by downloading the image Linux  over the network and via a memory SD card. 
 
- -[u-boot-xlnx](https://github.com/Xilinx/u-boot-xlnx) - Official Xilinx repositories U-boot
-
- -[xilinx-v2015.4](https://github.com/Xilinx/u-boot-xlnx) - Source code U-boot xilinx-v2015.4
-
+ - -[u-boot-xlnx](https://github.com/Xilinx/u-boot-xlnx) - Official Xilinx repositories U-boot
+ - -[xilinx-v2015.4](https://github.com/Xilinx/u-boot-xlnx/releases/tag/xilinx-v2015.4) - Source code U-boot xilinx-v2015.4
+ - -[xilinx-v14.7](https://github.com/Xilinx/u-boot-xlnx/releases/tag/xilinx-v14.7) - Source code U-boot xilinx-v14.7
 
 ### Prerequisites
 
 - Windows 10
-- Xilinx SDK 2015.4 (or 2015.3)
+- Xilinx SDK 2015.3 (tested on 2015.3, 2016.4)
 - ZedBoard 
 
 ### Set up workspace
@@ -50,8 +49,9 @@ right click on Project Explorer -> Import -> Existings Project Into Workspace ->
 
 - system_hw_platform_0 - hardware platform for Zynq 7020 ZedBoard DevKit.
 - u-boot-xlnx-xilinx-v2015.4-origin - origin source code (build but not work, not debug yet)
-- u-boot-xlnx-xilinx-v2015.4-debug - modify source code (build and debug, work correct)
-
+- u-boot-xlnx-xilinx-v2015.4-debug - modify source code (**build and debug**, load uImage correct)
+- u-boot-xlnx-xilinx-v14.7-origin - origin source code (build but not work, not debug yet)
+- u-boot-xlnx-xilinx-v14.7-debug - modify source code (**build and debug**, load uImage correct)
 
 ![PRJ](readme/uboot_projectexplorer.png)
 

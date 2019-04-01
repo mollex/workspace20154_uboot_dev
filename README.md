@@ -13,7 +13,7 @@ This repository contains a full working work space for an easy start working wit
 ### Prerequisites
 
 - Windows 10
-- Xilinx SDK 2015.3 (tested on 2015.3, 2016.4)
+- Xilinx SDK 2015.3 (tested on 2015.4, 2016.4)
 - ZedBoard 
 
 ### Set up workspace
@@ -111,3 +111,7 @@ Explore the project comfortably with breakpoints!
 ![PRJ](readme/uboot_debug2.png)
 
 ![PRJ](readme/debug_mode.gif)
+
+### YouTube
+
+[![mollex YouTube](https://i9.ytimg.com/vi/guMjw1ROpxI/mq2.jpg?sqp=CIzqh-UF&rs=AOn4CLDBsr1bVCaevGOSDnY63VRAn5IldA)](https://youtu.be/guMjw1ROpxI)

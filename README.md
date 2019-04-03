@@ -91,7 +91,7 @@ Work only with u-boot-xlnx-xilinx-v2015.4-debug project!
 
 - connect ZedBoard (jtag + uart)
 - remove SD card
-- set jampers  MIO6-GND, MIO5-3.3, MIO4-3.3, MIO3-GND, MIO2-GND    
+- set jumpers  MIO6-GND, MIO5-3.3, MIO4-3.3, MIO3-GND, MIO2-GND    
 - open **Debug Configuration** create New Xilinx C/C++ application (System Debugger)
 - set correct path to **u-boot-xlnx-xilinx-v2015.4-debug.elf** file
 - apply
@@ -114,4 +114,6 @@ Explore the project comfortably with breakpoints!
 
 ### YouTube
 
-[![mollex YouTube](https://i9.ytimg.com/vi/guMjw1ROpxI/mq2.jpg?sqp=CIzqh-UF&rs=AOn4CLDBsr1bVCaevGOSDnY63VRAn5IldA)](https://youtu.be/guMjw1ROpxI)
+Video instruction how to start work with project. 
+
+[![mollex YouTube](http://img.youtube.com/vi/guMjw1ROpxI/0.jpg)](https://youtu.be/guMjw1ROpxI)
